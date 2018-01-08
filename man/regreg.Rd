@@ -6,6 +6,7 @@
 \title{GOV.UK register register.}
 \format{A data frame
 \describe{
+  \item{date}{date register was published}
   \item{register}{name of register}
   \item{text}{description of register contents}
   \item{registry}{responsible body of register}
