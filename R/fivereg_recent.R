@@ -27,7 +27,9 @@
 fivereg_recent <- function(x, n = 5) {
   # take the df slot and sort by published data
   # and then alphabetical order (they may tie on dates)
-
+  out <- tryCatch(
+    expr = {
+  #####
   # make it easier to work with
   df <- x$df
 
@@ -53,5 +55,21 @@ output <- paste(df_n, collapse = ", ")
 # make last comma "and"
 
 return(output)
+
+#####
+    },
+warning = function() {
+
+  w <- warnings()
+  warning('Warning produced running fivereg_recent():', w)
+
+},
+error = function(e)  {
+
+  stop('Error produced running fivereg_recent():', e)
+
+},
+finally = {}
+  )
 
 }
