@@ -27,6 +27,6 @@ The registers are sorted by publication date and name by
 
 library(regregrap)
 report_data <- phase_date_data(regreg)
-fivenum_recent(report_data)
+fivereg_recent(report_data)
 
 }
