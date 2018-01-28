@@ -1,5 +1,5 @@
 [![Build
-Status](https://travis-ci.org/DCMSstats/eesectors.svg?branch=master)](https://travis-ci.org/DCMSstats/eesectors)
+Status](https://travis-ci.org/mammykins/regregrap.svg?branch=master)](https://travis-ci.org/mammykins/regregrap)
 
 # regregrap 
 
