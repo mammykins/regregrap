@@ -1,3 +1,6 @@
+[![Build
+Status](https://travis-ci.org/mammykins/regregrap.svg?branch=master)](https://travis-ci.org/mammykins/regregrap)
+
 # regregrap 
 
 A [register](https://registers.cloudapps.digital/registers?phase=ready+to+use) of registers Reproducible Analytical Pipeline package to produce a made-up statistical report as part of the RAP Massive Online Open Course (MOOC).
