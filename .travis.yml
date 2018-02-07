@@ -2,7 +2,12 @@
 
 language: R
 sudo: false
-cache: packages
+
+cache:
+  directories:
+    - $TRAVIS_BUILD_DIR/packrat/src
+    - $TRAVIS_BUILD_DIR/packrat/lib
+  packages: true
 
 warnings_are_errors: false
 
