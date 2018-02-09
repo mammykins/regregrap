@@ -4,7 +4,7 @@
 \alias{figure_1}
 \title{plots figure 1.}
 \usage{
-figure_1(x, ...)
+figure_1(x)
 }
 \arguments{
 \item{x}{Input phase_date_data class object.}
@@ -20,6 +20,6 @@ Returns a ggplot object.
 \examples{
 
 report_data <- regregrap::phase_date_data(regregrap::regreg)
-figure_1(report_data)
+regregrap::figure_1(report_data)
 
 }

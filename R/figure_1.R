@@ -9,12 +9,12 @@
 #' @examples
 #'
 #' report_data <- regregrap::phase_date_data(regregrap::regreg)
-#' figure_1(report_data)
+#' regregrap::figure_1(report_data)
 #'
 #' @export
 #' @param x Input phase_date_data class object.
 #'
-figure_1 <- function(x, ...) {
+figure_1 <- function(x) {
 
     out <- tryCatch(
       expr = {
@@ -22,8 +22,8 @@ figure_1 <- function(x, ...) {
 
         p <- ggplot2::ggplot(x$df, ggplot2::aes(x = phase)) +
           ggplot2::geom_bar() +
-          ggplot2::xlab("Phase") + ggplot2::scale_x_discrete(drop=FALSE) +
-          govstyle::theme_gov(base_colour = 'black')
+          ggplot2::xlab("Phase") + ggplot2::scale_x_discrete(drop=FALSE)
+          # govstyle::theme_gov(base_colour = 'black')
 
         return(p)
 
