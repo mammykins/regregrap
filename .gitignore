@@ -28,3 +28,4 @@ sensitive.txt
 # don't ignore this
 !register.csv
 packrat/lib*/
+inst/doc
