@@ -1,0 +1,61 @@
+---
+title: "Vignette Title"
+author: "Vignette Author"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Vignette Title}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(regregrap)
+```
+
+## register register RAP demo
+
+This is the final output report I want to produce every quarter. Using the traditional approach one would provide the analyst with the updated data and they would produce the report manually, what components would they have to update?
+
+Registers are lists of information. Each register is the most reliable list of its kind.
+
+It should contain an introductory sentence that describes the history of the register register, and gives it age in months using the lubridate package. It does this by providing the range of the registers (the time between the publication of the oldest one and the newest one).
+
+```{r echo=FALSE}
+report_data <- regregrap::phase_date_data(regregrap::regreg)
+```
+
+
+### Phases
+We draw a plot to look at the phases (The stage of development a register is in. There are 4 phases - `r report_data$phase_set`.) of the registers by count.
+
+
+```{r echo=FALSE}
+figure_1(report_data)
+```
+
+asdafsjflaflnf
+
+```{r}
+five_recent_registers <- regregrap::fivereg_recent(report_data) 
+```
+
+The five most recent registers were `r five_recent_registers` asdf.
+
+```{r}
+regregrap::figure_2(report_data)
+
+```
+
+asdkbfkfabf
+
+asldkflnsklfn
+
+### Conclusions 
+
+RAP is cool.
