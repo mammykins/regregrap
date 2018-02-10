@@ -1,12 +1,14 @@
 ---
-title: "Vignette Title"
-author: "Vignette Author"
+title: "RAP report"
+author: "Matthew Gregory"
 date: "`r Sys.Date()`"
-output: rmarkdown::html_vignette
+output:
+  tufte::tufte_html: default
+  tufte::tufte_handout: default
 vignette: >
   %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
+  %\VignetteEngine{knitr::rmarkdown}
 ---
 
 ```{r setup, include = FALSE}

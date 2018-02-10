@@ -10,7 +10,8 @@ LazyData: true
 RoxygenNote: 6.0.1
 Suggests: testthat (>= 1.0.2),
     knitr,
-    rmarkdown
+    rmarkdown,
+    tufte
 Imports: futile.logger (>= 1.4.3), ggplot2 (>= 2.2.1), lubridate (>= 1.7.0), tibble, zoo (>= 1.8.0)
 Remotes: github::ukgovdatascience/govstyle
 VignetteBuilder: knitr
