@@ -22,7 +22,7 @@ test_that("fivereg_recent equals manual sorting, with n default to 5", {
 })
 
 test_that("fivereg_recent with n; correct number of commas", {
-  expect_equal(stringr::str_count(fivereg_recent(x, 10),
+  expect_equal(stringr::str_count(fivereg_recent(x, 11),
                                   ","),
                9)
 })
